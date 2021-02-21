@@ -36,6 +36,7 @@
 - HTML
 - CSS/SCSS
 - Js
+- MySQL
 
 #### ツール・ライブラリ
 
