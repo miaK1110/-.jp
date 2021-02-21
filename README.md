@@ -12,7 +12,13 @@
 - PHP
 - HTML
 - CSS/SCSS
+- Js
+
+#### ツール・ライブラリ
+
 - jQuery
-
-
+- Visual Studio Code
+- MAMP
+- Google Fonts
+- Font Awesome
 
