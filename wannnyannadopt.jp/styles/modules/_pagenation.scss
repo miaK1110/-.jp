@@ -1,0 +1,44 @@
+.pagination {
+  position: relative;
+  overflow: hidden;
+  margin-top: 36px;
+  margin-bottom: 56px;
+}
+
+.pagination-list {
+  position: relative;
+  left: 50%;
+  float: left;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination .list-item {
+  border: 1px solid $grey;
+  position: relative;
+  left: -50%;
+  float: left;
+  margin-right: 5px;
+}
+
+.pagination .list-item:last-child {
+  margin-right: 0;
+}
+
+.pagination .list-item a {
+  display: block;
+  padding: 5px 10px;
+  background: #eee;
+  color: $grey;
+  text-decoration: none;
+}
+
+.pagination .list-item.active a {
+  background: $orange;
+  color: white;
+}
+
+.pagination .list-item a:hover {
+  background: $orange;
+  color: white;
+}

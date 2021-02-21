@@ -1,0 +1,112 @@
+.btn {
+  cursor: pointer;
+}
+
+//top-pageのお気に入りボタン
+.post {
+  cursor: pointer;
+}
+.btn--orange {
+  cursor: pointer;
+  color: $white;
+  background-color: $orange;
+
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background: darken($orange, 10%);
+  }
+
+  &.btn-c {
+    cursor: pointer;
+    font-size: 0.8rem;
+    position: relative;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 100vh;
+  }
+  &.i.fa {
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+}
+.btn-favourite {
+  cursor: pointer;
+}
+//フッターのボタン
+.foo-btn {
+  float: right;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+.btn-foo {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: $grey;
+  background: $white;
+  border: solid 2px lighten($grey, 20%);
+  border-radius: 3px;
+  transition: 0.4s;
+
+  &:hover {
+    background: $brown-light;
+    color: $black;
+    border: solid 2px $grey;
+  }
+}
+
+.btn-pink {
+  padding: 30px 60px;
+  border: none;
+  border-radius: 2px;
+  background-color: $pink;
+  color: $white;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($pink, 5%);
+  }
+}
+
+.btn-brown {
+  padding: 30px 60px;
+  border: none;
+  border-radius: 2px;
+  background-color: $brown-light;
+  color: $white;
+  font-size: 20px;
+  font-weight: bolder;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($brown-light, 5%);
+  }
+}
+
+.btn-brown-sm {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: $brown-light;
+  color: $white;
+  font-size: 20px;
+  font-weight: bolder;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($brown-light, 5%);
+  }
+}
+
+.btn-brown-xsm {
+  padding: 6px 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  background-color: $brown-light;
+  color: $white;
+  font-size: 12px;
+  font-weight: bolder;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($brown-light, 5%);
+  }
+}

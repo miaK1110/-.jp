@@ -1,0 +1,160 @@
+body {
+  font-family: 'Yu Gothic', '游ゴシック', 'メイリオ', 'Roboto', sans-serif;
+  background-color: $background;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Yu Gothic', '游ゴシック', 'メイリオ', 'Roboto', sans-serif;
+}
+p {
+  font-family: 'Yu Gothic', '游ゴシック', 'メイリオ', 'Roboto', sans-serif;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+}
+//トップページのロゴ、nav用のスタイル
+.header {
+  height: 180px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .top-logo {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 320px;
+    height: 100px;
+    position: relative;
+    .orange {
+      position: absolute;
+      color: #d9bb62;
+      font-weight: 800;
+      font-size: 40px;
+    }
+    .grey {
+      position: relative;
+      top: 0px;
+      left: 200px;
+      text-decoration: none;
+      color: $grey;
+      font-weight: bold;
+    }
+    .icon {
+      position: relative;
+      top: 25px;
+      left: 200px;
+    }
+  }
+  #global-nav {
+    // display: flex;
+    // justify-content: flex-end;
+    position: absolute;
+    right: 80px;
+    a {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: $grey;
+    }
+    a::after {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #333;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+    a:hover::after {
+      bottom: -6px;
+      opacity: 1;
+      visibility: visible;
+    }
+    li {
+      color: $grey;
+      display: inline-block;
+      padding-left: 14px;
+    }
+  }
+}
+//各画面の説明用のスタイル
+.notice {
+  text-align: center;
+  margin-bottom: 100px;
+  a {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+//モーダル用
+/* モーダルCSS */
+.modal {
+  display: none;
+}
+.modalArea {
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#openModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.counter-text {
+  color: $grey;
+}
