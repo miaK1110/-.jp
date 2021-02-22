@@ -35,7 +35,7 @@
 #### 使用言語・Database
 - PHP
 - HTML
-- CSS/SCSS
+- CSS/SASS
 - Js
 - MySQL
 
