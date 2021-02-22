@@ -43,13 +43,3 @@ var $countUp = $('#js-count'),
 $countUp.on('keyup', function (e) {
   $countView.html($(this).val().length);
 });
-
-// $(function () {
-//   if ($('#js-count').length) {
-//     $countView.html($(this).val().length);
-//   } else {
-//     $countUp.on('keyup', function (e) {
-//       $countView.html($(this).val().length);
-//     });
-//   }
-// });
