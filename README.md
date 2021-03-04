@@ -36,7 +36,7 @@
 - PHP
 - HTML
 - CSS/SASS
-- Js
+- JS
 - MySQL
 
 #### ツール・ライブラリ
