@@ -1,0 +1,191 @@
+.mypage-board {
+  background-color: $white;
+  color: $grey;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  text-align: left;
+  .mypage-head {
+    background-color: $brown-light;
+    height: 3.5rem;
+    color: $black;
+    font-weight: bolder;
+    line-height: 3.5;
+    padding-left: 1rem;
+  }
+  .main-comment {
+    width: 90%;
+    margin: 2rem 2rem 2rem 2.5rem;
+    a {
+      display: flex;
+      justify-content: left;
+      border-bottom: 1px solid lighten($grey, 50%);
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      .bolder {
+        font-weight: bolder;
+      }
+      .space-left {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .like-head {
+    background-color: $brown-light;
+    height: 3.5rem;
+    color: $black;
+    font-weight: bolder;
+    line-height: 3.5;
+    padding-left: 1rem;
+  }
+
+  .like-card {
+    .like-main {
+      margin: 1rem 1.5rem 3rem 1.5rem;
+    }
+    .main-pics {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 33%;
+        height: 0;
+        margin-top: 2rem;
+      }
+
+      .pic-box {
+        width: 33%;
+        margin-top: 2rem;
+        text-align: center;
+        img {
+          width: 240px;
+          height: 150px;
+        }
+        p {
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+// .info-card {
+//   // margin-bottom: 2rem;
+
+//   .form-badge {
+//     display: inline-block;
+//     padding: 0.5rem 20px;
+//     margin-left: 0.5rem;
+//     margin-bottom: 10px;
+//   }
+//   .info-icon {
+//     margin: 0 auto;
+//     text-align: center;
+//     width: 180px;
+//     height: 180px;
+//     border-radius: 50%;
+//     img {
+//       margin-top: 1rem;
+//       margin: 0 auto;
+//       text-align: center;
+//       height: 180px;
+//     }
+//   }
+// }
+//一般会員用のインフォメーション
+.info-card-general {
+  .form-badge {
+    display: inline-block;
+    padding: 0.5rem 20px;
+    margin-left: 0.5rem;
+    margin-bottom: 10px;
+  }
+  .info-icon {
+    margin: 0 auto;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    img {
+      margin-top: 1rem;
+      margin: 0 auto;
+      text-align: center;
+      height: 180px;
+    }
+  }
+  .info-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    li {
+      font-weight: bolder;
+      color: $grey;
+    }
+    .info-span {
+      margin-left: 1rem;
+    }
+  }
+  .contents-area {
+    margin-top: 3rem;
+    text-align: center;
+    li {
+      display: inline-block;
+      color: $grey;
+      font-weight: bolder;
+      margin: 0 auto;
+    }
+  }
+}
+
+//保護者用のインフォメーション
+.info-card-guardians {
+  margin-bottom: 100px;
+  .form-badge {
+    display: inline-block;
+    padding: 0.5rem 20px;
+    margin-left: 0.5rem;
+    margin-bottom: 10px;
+    margin-top: 0.5rem;
+  }
+  .info-icon {
+    margin: 0 auto;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    img {
+      margin-top: 1rem;
+      margin: 0 auto;
+      text-align: center;
+      height: 180px;
+    }
+  }
+  .info-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    li {
+      font-weight: bolder;
+      color: $grey;
+    }
+    .info-span {
+      margin-left: 1rem;
+    }
+  }
+  .contents-area {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    li {
+      display: inline-block;
+      color: $grey;
+      font-weight: bolder;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+  }
+}
